@@ -7,4 +7,4 @@ mkdir -p ~/.kube
 echo $INPUT_KUBECONFIG | base64 -d > ~/.kube/config
 
 # Execute kubectl command
-sh -c "kubectl $*"
+sh -c "$*"
